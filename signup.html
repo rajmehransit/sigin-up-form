@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <form  action="/"  method="POST" class="frm">
+              <h1>SIGNUP</h1>
+             <input type = "text" class="box" placeholder="First Name" name  = "Firstname"  >
+
+             <input type = "text" class="box" placeholder="Last Name" name  = "Lastname" >
+             <input type="email" class="box"  placeholder="Email"name="email" >
+             <button type="submit" name="btn" class="btn">Sign-up</button>
+   </form>
+
+   <script>
+           function validation()
+           {
+               var id=document.f1.user.value;
+               var ps=document.f1.pass.value;
+               if(id.length=="" && ps.length=="") {
+                   alert("User Name and Password fields are empty");
+                   return false;
+               }
+               else
+               {
+                   if(id.length=="") {
+                       alert("User Name is empty");
+                       return false;
+                   }
+                   if (ps.length=="") {
+                   alert("Password field is empty");
+                   return false;
+                   }
+               }
+           }
+       </script>
+  </body>
+</html>
